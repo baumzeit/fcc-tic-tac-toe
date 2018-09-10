@@ -576,8 +576,8 @@ function getEmptyTilesFrom(directions) {   // gather all the empty tiles per lin
 function bestTilesOf(tiles) {   // takes an array of tile names and finds the one(s) most frequent
   let pos = 0;                  // makes use of duplicates
   let maxCount = 0;
-  let result = tiles.reduce(function(bestTiles, tile, i) {
-    pos = i;
+  let result = tiles.reduce(function(bestTiles, tile, j) {
+    pos = j;
     let count = 0;
     for (let i = 0; pos > -1; i++) {
       let newPos = tiles.indexOf(tile, pos) + 1;
