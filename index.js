@@ -3,9 +3,9 @@ const fader = document.getElementById('fader');
 const lis = document.querySelectorAll('#grid > li');
 const overlay = document.getElementById('overlay');
 const contentWrapper = document.getElementById('content-wrapper');
-const content1 = document.getElementById('content1');
-const content2 = document.getElementById('content2');
-const content3 = document.getElementById('content3');
+var content1 = document.getElementById('content1'); // defines variable as var to avoid
+var content2 = document.getElementById('content2'); // problem in webkit where variable name
+var content3 = document.getElementById('content3'); // and id can't be the same name
 
 for (var i = 0; i < lis.length; i++) {
   lis[i].addEventListener('click', handleClick);
