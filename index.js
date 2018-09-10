@@ -1,11 +1,12 @@
-const playersElements = document.getElementsByClassName('player');
-const fader = document.getElementById('fader');
-const lis = document.querySelectorAll('#grid > li');
-const overlay = document.getElementById('overlay');
-const contentWrapper = document.getElementById('content-wrapper');
-var content1 = document.getElementById('content1'); // defines variable as var to avoid
-var content2 = document.getElementById('content2'); // problem in webkit where variable name
-var content3 = document.getElementById('content3'); // and id can't be the same name
+// decalaring variables as var to avoid a problem in webkit where variable name and id can not have identical names
+var playersElements = document.getElementsByClassName('player');
+var fader = document.getElementById('fader');
+var lis = document.querySelectorAll('#grid > li');
+var overlay = document.getElementById('overlay');
+var contentWrapper = document.getElementById('content-wrapper');
+var content1 = document.getElementById('content1'); 
+var content2 = document.getElementById('content2');
+var content3 = document.getElementById('content3');
 
 for (var i = 0; i < lis.length; i++) {
   lis[i].addEventListener('click', handleClick);
